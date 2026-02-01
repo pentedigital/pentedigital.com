@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cookie Policy | Pente Digital</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Pente Digital's cookie policy explains how we use cookies and similar technologies on our website.">
+    <meta name="keywords" content="cookie policy, cookies, tracking, Pente Digital">
+    <meta name="author" content="Pente Digital">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://pentedigital.com/cookies.html">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://pentedigital.com/cookies.html">
+    <meta property="og:title" content="Cookie Policy | Pente Digital">
+    <meta property="og:description" content="Pente Digital's cookie policy explains how we use cookies and similar technologies on our website.">
+    <meta property="og:image" content="https://pentedigital.com/og-image.png">
+    <meta property="og:site_name" content="Pente Digital">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://pentedigital.com/cookies.html">
+    <meta name="twitter:title" content="Cookie Policy | Pente Digital">
+    <meta name="twitter:description" content="Pente Digital's cookie policy explains how we use cookies and similar technologies on our website.">
+    <meta name="twitter:image" content="https://pentedigital.com/og-image.png">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="apple-touch-icon" href="favicon.svg">
+
+    <!-- Theme color for mobile browsers -->
+    <meta name="theme-color" content="#4f46e5">
+    <meta name="msapplication-TileColor" content="#4f46e5">
+
+    <!-- Preconnect to external resources -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- DNS Prefetch for faster resolution -->
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+
+    <!-- Preload critical CSS -->
+    <link rel="preload" href="styles.css" as="style">
+
+    <!-- Google Fonts with font-display swap for better performance -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Schema.org structured data - BreadcrumbList -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://pentedigital.com/"},
+            {"@type": "ListItem", "position": 2, "name": "Cookie Policy", "item": "https://pentedigital.com/cookies.html"}
+        ]
+    }
+    </script>
+
+    <!-- Page-specific styles -->
+    <style>
+        .legal-hero {
+            padding: var(--space-32) 0 var(--space-16);
+            background: var(--color-surface);
+        }
+
+        .legal-hero__header {
+            text-align: center;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .legal-hero__title {
+            font-size: clamp(var(--font-size-3xl), 5vw, var(--font-size-5xl));
+            margin-bottom: var(--space-4);
+        }
+
+        .legal-hero__subtitle {
+            font-size: var(--font-size-lg);
+            color: var(--color-text-secondary);
+        }
+
+        .legal-content {
+            padding: var(--space-16) 0 var(--space-32);
+            background: var(--color-base);
+        }
+
+        .legal-content__wrapper {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .legal-content__back {
+            display: inline-flex;
+            align-items: center;
+            gap: var(--space-2);
+            margin-bottom: var(--space-8);
+            font-weight: 500;
+            color: var(--color-primary);
+        }
+
+        .legal-content__back:hover {
+            color: var(--color-primary-dark);
+        }
+
+        .legal-content__updated {
+            font-size: var(--font-size-sm);
+            color: var(--color-text-muted);
+            margin-bottom: var(--space-10);
+        }
+
+        .legal-content h2 {
+            font-size: var(--font-size-2xl);
+            margin-top: var(--space-12);
+            margin-bottom: var(--space-4);
+            color: var(--color-text-primary);
+        }
+
+        .legal-content h3 {
+            font-size: var(--font-size-lg);
+            margin-top: var(--space-8);
+            margin-bottom: var(--space-3);
+            color: var(--color-text-primary);
+        }
+
+        .legal-content p {
+            margin-bottom: var(--space-4);
+            line-height: 1.8;
+        }
+
+        .legal-content ul, .legal-content ol {
+            margin-left: var(--space-6);
+            margin-bottom: var(--space-6);
+        }
+
+        .legal-content ul {
+            list-style: disc;
+        }
+
+        .legal-content ol {
+            list-style: decimal;
+        }
+
+        .legal-content li {
+            margin-bottom: var(--space-3);
+            color: var(--color-text-secondary);
+            line-height: 1.7;
+        }
+
+        .legal-content li strong {
+            color: var(--color-text-primary);
+        }
+
+        .legal-content a {
+            color: var(--color-primary);
+        }
+
+        .legal-content a:hover {
+            text-decoration: underline;
+        }
+
+        .cookie-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: var(--space-6) 0;
+            font-size: var(--font-size-sm);
+        }
+
+        .cookie-table th,
+        .cookie-table td {
+            padding: var(--space-4);
+            text-align: left;
+            border-bottom: 1px solid var(--color-border);
+        }
+
+        .cookie-table th {
+            background: var(--color-surface);
+            font-weight: 600;
+            color: var(--color-text-primary);
+        }
+
+        .cookie-table td {
+            color: var(--color-text-secondary);
+        }
+
+        .cookie-table tr:hover td {
+            background: var(--color-surface);
+        }
+
+        @media (max-width: 768px) {
+            .legal-hero {
+                padding: var(--space-24) 0 var(--space-12);
+            }
+
+            .legal-content {
+                padding: var(--space-10) 0 var(--space-20);
+            }
+
+            .cookie-table {
+                display: block;
+                overflow-x: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Skip Link for Accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- ========================================
+         HEADER / NAVIGATION
+    ======================================== -->
+    <header class="header header--solid" role="banner">
+        <nav class="header__nav container" role="navigation" aria-label="Main navigation">
+            <!-- Logo -->
+            <a href="/" class="header__logo" aria-label="Pente Digital - Home">
+                <span class="header__logo-mark" aria-hidden="true"></span>
+                <span class="header__logo-text">PENTE</span>
+            </a>
+
+            <!-- Desktop Navigation -->
+            <ul class="header__menu" role="menubar">
+                <li role="none">
+                    <a href="index.html#platforms" class="header__menu-link" role="menuitem">Platforms</a>
+                </li>
+                <li role="none">
+                    <a href="index.html#ai-engines" class="header__menu-link" role="menuitem">AI Engines</a>
+                </li>
+                <li role="none">
+                    <a href="index.html#capabilities" class="header__menu-link" role="menuitem">Capabilities</a>
+                </li>
+                <li role="none">
+                    <a href="contact.html" class="header__menu-link header__menu-link--cta" role="menuitem">Contact</a>
+                </li>
+            </ul>
+
+            <!-- Mobile Menu Button -->
+            <button
+                class="header__mobile-toggle"
+                type="button"
+                aria-label="Toggle navigation menu"
+                aria-expanded="false"
+                aria-controls="mobile-menu"
+            >
+                <span class="header__mobile-toggle-bar" aria-hidden="true"></span>
+                <span class="header__mobile-toggle-bar" aria-hidden="true"></span>
+                <span class="header__mobile-toggle-bar" aria-hidden="true"></span>
+            </button>
+
+            <!-- Mobile Navigation (hidden by default) -->
+            <div class="header__mobile-menu" id="mobile-menu" aria-hidden="true">
+                <ul class="header__mobile-menu-list" role="menu">
+                    <li role="none">
+                        <a href="index.html#platforms" class="header__mobile-menu-link" role="menuitem">Platforms</a>
+                    </li>
+                    <li role="none">
+                        <a href="index.html#ai-engines" class="header__mobile-menu-link" role="menuitem">AI Engines</a>
+                    </li>
+                    <li role="none">
+                        <a href="index.html#capabilities" class="header__mobile-menu-link" role="menuitem">Capabilities</a>
+                    </li>
+                    <li role="none">
+                        <a href="contact.html" class="header__mobile-menu-link header__mobile-menu-link--cta" role="menuitem">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ========================================
+         MAIN CONTENT
+    ======================================== -->
+    <main id="main-content" role="main">
+
+        <!-- ========================================
+             COOKIE HERO
+        ======================================== -->
+        <section class="legal-hero" aria-labelledby="cookie-heading">
+            <div class="container">
+                <header class="legal-hero__header" data-animate="fade-up" data-delay="0">
+                    <span class="section-header__eyebrow">Legal</span>
+                    <h1 id="cookie-heading" class="legal-hero__title">Cookie Policy</h1>
+                    <p class="legal-hero__subtitle">How we use cookies and similar technologies on our website.</p>
+                </header>
+            </div>
+        </section>
+
+        <!-- ========================================
+             COOKIE CONTENT
+        ======================================== -->
+        <section class="legal-content" aria-label="Cookie policy content">
+            <div class="container">
+                <div class="legal-content__wrapper" data-animate="fade-up" data-delay="100">
+                    <a href="index.html" class="legal-content__back">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M19 12H5M12 19l-7-7 7-7"/>
+                        </svg>
+                        Back to Home
+                    </a>
+
+                    <p class="legal-content__updated">Last updated: January 30, 2026</p>
+
+                    <p>This Cookie Policy explains how Pente Digital ("we," "our," or "us") uses cookies and similar tracking technologies when you visit our website at pentedigital.com. This policy should be read alongside our <a href="privacy.html">Privacy Policy</a>.</p>
+
+                    <h2>What Are Cookies?</h2>
+                    <p>Cookies are small text files that are stored on your device (computer, tablet, or mobile phone) when you visit a website. They are widely used to make websites work more efficiently and to provide information to website owners.</p>
+                    <p>Cookies can be "persistent" or "session" cookies:</p>
+                    <ul>
+                        <li><strong>Persistent cookies</strong> remain on your device for a set period or until you delete them</li>
+                        <li><strong>Session cookies</strong> are temporary and are deleted when you close your browser</li>
+                    </ul>
+
+                    <h2>How We Use Cookies</h2>
+                    <p>We use cookies for the following purposes:</p>
+
+                    <h3>Essential Cookies</h3>
+                    <p>These cookies are necessary for the website to function properly. They enable basic functions like page navigation and access to secure areas of the website. The website cannot function properly without these cookies.</p>
+
+                    <h3>Performance and Analytics Cookies</h3>
+                    <p>These cookies help us understand how visitors interact with our website by collecting and reporting information anonymously. This helps us improve the website's performance and user experience.</p>
+
+                    <h3>Functionality Cookies</h3>
+                    <p>These cookies allow the website to remember choices you make (such as your preferred language or region) and provide enhanced, more personalized features.</p>
+
+                    <h2>Cookies We Use</h2>
+                    <p>Below is a detailed list of the cookies we use on our website:</p>
+
+                    <table class="cookie-table">
+                        <thead>
+                            <tr>
+                                <th>Cookie Name</th>
+                                <th>Type</th>
+                                <th>Purpose</th>
+                                <th>Duration</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>session_id</td>
+                                <td>Essential</td>
+                                <td>Maintains user session state across page requests</td>
+                                <td>Session</td>
+                            </tr>
+                            <tr>
+                                <td>csrf_token</td>
+                                <td>Essential</td>
+                                <td>Security token to prevent cross-site request forgery</td>
+                                <td>Session</td>
+                            </tr>
+                            <tr>
+                                <td>cookie_consent</td>
+                                <td>Essential</td>
+                                <td>Stores your cookie consent preferences</td>
+                                <td>1 year</td>
+                            </tr>
+                            <tr>
+                                <td>_ga</td>
+                                <td>Analytics</td>
+                                <td>Google Analytics - distinguishes unique users</td>
+                                <td>2 years</td>
+                            </tr>
+                            <tr>
+                                <td>_gid</td>
+                                <td>Analytics</td>
+                                <td>Google Analytics - distinguishes unique users</td>
+                                <td>24 hours</td>
+                            </tr>
+                            <tr>
+                                <td>_gat</td>
+                                <td>Analytics</td>
+                                <td>Google Analytics - throttles request rate</td>
+                                <td>1 minute</td>
+                            </tr>
+                            <tr>
+                                <td>theme_preference</td>
+                                <td>Functionality</td>
+                                <td>Remembers your display theme preference</td>
+                                <td>1 year</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <h2>Third-Party Cookies</h2>
+                    <p>Some cookies on our website are set by third-party services. These include:</p>
+                    <ul>
+                        <li><strong>Google Analytics:</strong> We use Google Analytics to understand how visitors use our website. Google Analytics uses cookies to collect information about website usage. <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's Privacy Policy</a></li>
+                        <li><strong>Google Fonts:</strong> We use Google Fonts to display typography. Google may collect data about font usage. <a href="https://developers.google.com/fonts/faq#what_does_using_the_google_fonts_api_mean_for_the_privacy_of_my_users" target="_blank" rel="noopener">Google Fonts Privacy</a></li>
+                    </ul>
+
+                    <h2>Managing Cookies</h2>
+                    <p>You can control and manage cookies in several ways:</p>
+
+                    <h3>Browser Settings</h3>
+                    <p>Most web browsers allow you to manage cookies through their settings. You can:</p>
+                    <ul>
+                        <li>View what cookies are stored and delete them individually</li>
+                        <li>Block third-party cookies</li>
+                        <li>Block all cookies from specific sites</li>
+                        <li>Block all cookies from being set</li>
+                        <li>Delete all cookies when you close your browser</li>
+                    </ul>
+                    <p>Please note that blocking all cookies may affect your experience on our website and other websites, as some features may not work properly.</p>
+
+                    <h3>Browser-Specific Instructions</h3>
+                    <p>Here are links to manage cookies in common browsers:</p>
+                    <ul>
+                        <li><a href="https://support.google.com/chrome/answer/95647" target="_blank" rel="noopener">Google Chrome</a></li>
+                        <li><a href="https://support.mozilla.org/en-US/kb/clear-cookies-and-site-data-firefox" target="_blank" rel="noopener">Mozilla Firefox</a></li>
+                        <li><a href="https://support.apple.com/guide/safari/manage-cookies-sfri11471/mac" target="_blank" rel="noopener">Safari</a></li>
+                        <li><a href="https://support.microsoft.com/en-us/microsoft-edge/delete-cookies-in-microsoft-edge-63947406-40ac-c3b8-57b9-2a946a29ae09" target="_blank" rel="noopener">Microsoft Edge</a></li>
+                    </ul>
+
+                    <h3>Opt-Out Tools</h3>
+                    <p>You can opt out of certain third-party cookies:</p>
+                    <ul>
+                        <li><strong>Google Analytics:</strong> Install the <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" rel="noopener">Google Analytics Opt-out Browser Add-on</a></li>
+                        <li><strong>Multiple advertisers:</strong> Visit the <a href="https://optout.networkadvertising.org/" target="_blank" rel="noopener">Network Advertising Initiative opt-out page</a></li>
+                    </ul>
+
+                    <h2>Do Not Track</h2>
+                    <p>Some browsers include a "Do Not Track" (DNT) feature that signals to websites that you do not want your online activity tracked. Our website currently does not respond to DNT signals, but you can manage your cookie preferences as described above.</p>
+
+                    <h2>Changes to This Policy</h2>
+                    <p>We may update this Cookie Policy from time to time to reflect changes in our practices or for other operational, legal, or regulatory reasons. We will notify you of any material changes by updating the "Last updated" date at the top of this policy.</p>
+
+                    <h2>Contact Us</h2>
+                    <p>If you have any questions about our use of cookies or this Cookie Policy, please contact us at:</p>
+                    <p>
+                        <strong>Pente Digital</strong><br>
+                        Email: <a href="mailto:privacy@pentedigital.com">privacy@pentedigital.com</a>
+                    </p>
+
+                    <h2>Related Policies</h2>
+                    <ul>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ========================================
+         FOOTER
+    ======================================== -->
+    <footer class="footer" role="contentinfo">
+        <div class="footer__container container">
+            <!-- Footer Main Content -->
+            <div class="footer__main">
+                <!-- Footer Brand -->
+                <div class="footer__brand">
+                    <a href="/" class="footer__logo" aria-label="Pente Digital - Home">
+                        <span class="footer__logo-mark" aria-hidden="true"></span>
+                        <span class="footer__logo-text">PENTE</span>
+                    </a>
+                    <p class="footer__tagline">Building the infrastructure of tomorrow.</p>
+                </div>
+
+                <!-- Footer Links Grid -->
+                <div class="footer__links">
+                    <!-- Column 1: Platforms -->
+                    <nav class="footer__column" aria-label="Platforms">
+                        <h4 class="footer__column-title">Platforms</h4>
+                        <ul class="footer__column-list">
+                            <li><a href="index.html#platforms" class="footer__link">PIO GOLD</a></li>
+                            <li><a href="index.html#platforms" class="footer__link">CHENGEFX</a></li>
+                            <li><a href="index.html#platforms" class="footer__link">CAQEEH P2P</a></li>
+                            <li><a href="index.html#platforms" class="footer__link">VIZO DYNAMICS</a></li>
+                            <li><a href="index.html#platforms" class="footer__link">ISBETBRAINERY</a></li>
+                        </ul>
+                    </nav>
+
+                    <!-- Column 2: AI Engines -->
+                    <nav class="footer__column" aria-label="AI Engines">
+                        <h4 class="footer__column-title">AI Engines</h4>
+                        <ul class="footer__column-list">
+                            <li><a href="index.html#ai-engines" class="footer__link">DataWeave&trade;</a></li>
+                            <li><a href="index.html#ai-engines" class="footer__link">SentimentCore&trade;</a></li>
+                            <li><a href="index.html#ai-engines" class="footer__link">ForecastX&trade;</a></li>
+                            <li><a href="index.html#ai-engines" class="footer__link">VictoryPath&trade;</a></li>
+                            <li><a href="index.html#ai-engines" class="footer__link">HyperResponse&trade;</a></li>
+                            <li><a href="index.html#ai-engines" class="footer__link">Sentinel&trade;</a></li>
+                        </ul>
+                    </nav>
+
+                    <!-- Column 3: Company -->
+                    <nav class="footer__column" aria-label="Company">
+                        <h4 class="footer__column-title">Company</h4>
+                        <ul class="footer__column-list">
+                            <li><a href="index.html#capabilities" class="footer__link">Capabilities</a></li>
+                            <li><a href="contact.html" class="footer__link">Contact</a></li>
+                            <li><a href="privacy.html" class="footer__link">Privacy Policy</a></li>
+                            <li><a href="terms.html" class="footer__link">Terms of Service</a></li>
+                        </ul>
+                    </nav>
+
+                    <!-- Column 4: Connect -->
+                    <div class="footer__column" aria-label="Connect">
+                        <h4 class="footer__column-title">Connect</h4>
+                        <ul class="footer__column-list">
+                            <li>
+                                <a href="mailto:hello@pentedigital.com" class="footer__link footer__link--email">
+                                    hello@pentedigital.com
+                                </a>
+                            </li>
+                        </ul>
+                        <!-- Social Links -->
+                        <div class="footer__social">
+                            <a href="#" class="footer__social-link" aria-label="LinkedIn">
+                                <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+                                    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                                </svg>
+                            </a>
+                            <a href="#" class="footer__social-link" aria-label="Twitter">
+                                <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+                                    <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="footer__bottom">
+                <p class="footer__copyright">
+                    &copy; <span data-year>2026</span> Pente Digital. All rights reserved.
+                </p>
+                <nav class="footer__legal" aria-label="Legal links">
+                    <a href="privacy.html" class="footer__legal-link">Privacy Policy</a>
+                    <span class="footer__legal-separator" aria-hidden="true">&bull;</span>
+                    <a href="terms.html" class="footer__legal-link">Terms of Service</a>
+                    <span class="footer__legal-separator" aria-hidden="true">&bull;</span>
+                    <a href="cookies.html" class="footer__legal-link">Cookie Policy</a>
+                </nav>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ========================================
+         JAVASCRIPT
+    ======================================== -->
+    <script>
+        // Mobile Menu Toggle
+        const mobileToggle = document.querySelector('.header__mobile-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const header = document.querySelector('.header');
+
+        mobileToggle.addEventListener('click', function() {
+            const isExpanded = this.getAttribute('aria-expanded') === 'true';
+            this.setAttribute('aria-expanded', !isExpanded);
+            mobileMenu.setAttribute('aria-hidden', isExpanded);
+            this.classList.toggle('is-active');
+            mobileMenu.classList.toggle('is-open');
+            document.body.classList.toggle('menu-open');
+        });
+
+        // Close mobile menu when clicking a link
+        document.querySelectorAll('.header__mobile-menu-link').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileToggle.setAttribute('aria-expanded', 'false');
+                mobileMenu.setAttribute('aria-hidden', 'true');
+                mobileToggle.classList.remove('is-active');
+                mobileMenu.classList.remove('is-open');
+                document.body.classList.remove('menu-open');
+            });
+        });
+
+        // Header Scroll Effect
+        let lastScroll = 0;
+        window.addEventListener('scroll', function() {
+            const currentScroll = window.pageYOffset;
+            header.classList.toggle('is-scrolled', currentScroll > 50);
+            lastScroll = currentScroll;
+        });
+
+        // Intersection Observer for Animations
+        const animateElements = document.querySelectorAll('[data-animate]');
+
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px 0px -50px 0px',
+            threshold: 0.1
+        };
+
+        const animateOnScroll = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const delay = entry.target.dataset.delay || 0;
+                    setTimeout(() => {
+                        entry.target.classList.add('is-visible');
+                    }, parseInt(delay));
+                    animateOnScroll.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        animateElements.forEach(el => animateOnScroll.observe(el));
+
+        // Update copyright year dynamically
+        const yearEl = document.querySelector('[data-year]');
+        if (yearEl) {
+            yearEl.textContent = new Date().getFullYear();
+        }
+    </script>
+</body>
+</html>

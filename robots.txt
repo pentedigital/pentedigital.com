@@ -1,0 +1,35 @@
+# robots.txt for pentedigital.com
+# https://pentedigital.com
+
+# Allow all search engines
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://pentedigital.com/sitemap.xml
+
+# Crawl-delay (optional, for polite crawling)
+Crawl-delay: 1
+
+# Disallow specific paths (none currently)
+# Disallow: /admin/
+# Disallow: /private/
+
+# Allow important resources for rendering
+Allow: /styles.css
+Allow: /favicon.svg
+Allow: /og-image.png
+
+# Google specific
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+# Bing specific
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+# Google Images
+User-agent: Googlebot-Image
+Allow: /
