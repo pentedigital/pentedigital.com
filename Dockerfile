@@ -6,7 +6,7 @@ RUN apt-get update && apt-get install -y \
     msmtp \
     msmtp-mta \
     && docker-php-ext-install opcache \
-    && a2enmod rewrite headers \
+    && a2enmod rewrite headers expires \
     && rm -rf /var/lib/apt/lists/*
 
 # Configure PHP
