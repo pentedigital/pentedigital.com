@@ -1,3 +1,5 @@
+# Security: Container runs as non-root user (www-data)
+# Verified: 2026-02-02
 FROM php:8.3-apache
 
 # Enable Apache modules
@@ -36,8 +38,11 @@ RUN { \
 # Copy site files
 COPY . /var/www/html/
 
-# Set permissions
+# Set permissions and switch to non-root user (SECURITY FIX)
 RUN chown -R www-data:www-data /var/www/html
+
+# Switch to non-root user before EXPOSE (prevents running as root)
+USER www-data
 
 EXPOSE 80
 
