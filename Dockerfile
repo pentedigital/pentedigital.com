@@ -5,6 +5,7 @@ RUN apt-get update && apt-get install -y \
     libpng-dev \
     msmtp \
     msmtp-mta \
+    curl \
     && docker-php-ext-install opcache \
     && a2enmod rewrite headers expires \
     && rm -rf /var/lib/apt/lists/*
@@ -39,3 +40,7 @@ COPY . /var/www/html/
 RUN chown -R www-data:www-data /var/www/html
 
 EXPOSE 80
+
+# Health check
+HEALTHCHECK --interval=30s --timeout=10s --start-period=5s --retries=3 \
+    CMD curl -f http://localhost/ || exit 1
