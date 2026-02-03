@@ -1,0 +1,56 @@
+version: "3.8"
+
+# ============================================================================
+# PENTEDIGITAL - TRAEFIK CONFIGURATION
+# ============================================================================
+# Website: https://pentedigital.com
+# ============================================================================
+
+services:
+  # Static website with PHP support
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: pentedigital-web
+    restart: unless-stopped
+    expose:
+      - "80"
+    networks:
+      - traefik-public
+    labels:
+      # Enable Traefik
+      - "traefik.enable=true"
+      - "traefik.docker.network=traefik-public"
+
+      # Website router
+      - "traefik.http.routers.pentedigital-web.rule=Host(`pentedigital.com`) || Host(`www.pentedigital.com`)"
+      - "traefik.http.routers.pentedigital-web.entrypoints=websecure"
+      - "traefik.http.routers.pentedigital-web.tls=true"
+      - "traefik.http.routers.pentedigital-web.tls.certresolver=letsencrypt"
+
+      # Website service
+      - "traefik.http.services.pentedigital-web.loadbalancer.server.port=80"
+
+      # Middlewares
+      - "traefik.http.routers.pentedigital-web.middlewares=security-headers@file,compression@file,redirect-www-to-non-www@file"
+
+      # Health check
+      - "traefik.http.services.pentedigital-web.loadbalancer.healthcheck.path=/"
+      - "traefik.http.services.pentedigital-web.loadbalancer.healthcheck.interval=30s"
+
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://127.0.0.1/"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 10s
+    deploy:
+      resources:
+        limits:
+          cpus: "0.5"
+          memory: 256M
+
+networks:
+  traefik-public:
+    external: true
