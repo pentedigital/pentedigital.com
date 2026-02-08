@@ -13,10 +13,10 @@ if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
 }
 
 // Get and sanitize form data
-$name = filter_input(INPUT_POST, 'name', FILTER_SANITIZE_STRING) ?? '';
+$name = htmlspecialchars(trim($_POST['name'] ?? ''), ENT_QUOTES, 'UTF-8');
 $email = filter_input(INPUT_POST, 'email', FILTER_SANITIZE_EMAIL) ?? '';
-$company = filter_input(INPUT_POST, 'company', FILTER_SANITIZE_STRING) ?? '';
-$message = filter_input(INPUT_POST, 'message', FILTER_SANITIZE_STRING) ?? '';
+$company = htmlspecialchars(trim($_POST['company'] ?? ''), ENT_QUOTES, 'UTF-8');
+$message = htmlspecialchars(trim($_POST['message'] ?? ''), ENT_QUOTES, 'UTF-8');
 
 // Validate required fields
 $errors = [];

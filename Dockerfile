@@ -37,6 +37,11 @@ RUN { \
     } > /etc/apache2/conf-available/custom.conf \
     && a2enconf custom
 
+# Configure msmtp for PHP mail()
+COPY msmtprc /etc/msmtprc
+RUN chmod 644 /etc/msmtprc \
+    && echo 'sendmail_path = "/usr/bin/msmtp -t"' > /usr/local/etc/php/conf.d/mail.ini
+
 # Copy site files
 COPY . /var/www/html/
 
