@@ -2,6 +2,8 @@
 # Verified: 2026-02-02
 FROM php:8.3-apache
 
+SHELL ["/bin/bash", "-c"]
+
 # Enable Apache modules
 RUN apt-get update && apt-get install -y \
     libpng-dev \
