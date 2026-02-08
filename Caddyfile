@@ -43,3 +43,19 @@ taxeltech.com, www.taxeltech.com {
 
 	reverse_proxy localhost:8082
 }
+
+caqeh.com, www.caqeh.com {
+	encode gzip zstd
+
+	header ?Strict-Transport-Security "max-age=63072000; includeSubDomains; preload"
+	header ?Content-Security-Policy "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data:; connect-src 'self' wss://caqeh.com"
+	header ?Permissions-Policy "camera=(), microphone=(), geolocation=()"
+
+	@static path *.css *.js *.png *.jpg *.jpeg *.gif *.svg *.ico *.woff *.woff2
+	header @static ?Cache-Control "public, max-age=31536000, immutable"
+
+	@html path *.html /
+	header @html ?Cache-Control "no-cache, must-revalidate"
+
+	reverse_proxy localhost:8083
+}
